@@ -12,5 +12,6 @@ pub trait Broker: Send + Sync + 'static {
         F: Fn(Vec<u8>) -> Fut + Send + Sync + 'static,
         Fut: Future<Output = Result<(), String>> + Send + 'static;
 
+    // shutdown graceful exit broker
     async fn shutdown(&self) -> Result<(), String>;
 }
