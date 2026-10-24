@@ -1,6 +1,6 @@
 # rs-broker
 
-mq broker,eg:kafka or redis
+MQ Broker interface abstraction, default implementation of Kafka message publish/subscribe.
 
 # rdkafka
 
